@@ -26,6 +26,9 @@ ex: ## 1.5.4 - 2021-02-15
 
 ### Added
 
+- Fiber server
+- Gorm connection (postgres database)
+
 ### Changed
 
 ### Deprecated
