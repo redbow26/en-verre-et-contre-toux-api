@@ -28,6 +28,12 @@ ex: ## 1.5.4 - 2021-02-15
 
 - Fiber server
 - Gorm connection (postgres database)
+- Validator
+- Activity struct
+- Get activities, activity
+- Post activity
+- Put activity
+- Delete activity
 
 ### Changed
 

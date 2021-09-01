@@ -2,14 +2,13 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/oklog/oklog/pkg/group"
+	"github.com/redbow26/en-verre-et-contre-toux-api/pkg/activity"
 	"github.com/redbow26/en-verre-et-contre-toux-api/pkg/common/handler"
 	"github.com/redbow26/en-verre-et-contre-toux-api/pkg/database"
 	"github.com/redbow26/en-verre-et-contre-toux-api/pkg/server"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"log"
-	"os/user"
 	"time"
 )
 
@@ -21,7 +20,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	err = database.DB.AutoMigrate(&user.User{}, &group.Group{})
+	err = database.DB.AutoMigrate(&activity.Activity{})
 	if err != nil {
 		log.Fatal(err)
 	}
